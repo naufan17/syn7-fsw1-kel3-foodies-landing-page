@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@layer components {
+    .box {
+        min-height: 1rem;
+        border: 1px solid red;
+        font-size: 1rem;
+        background-color: lightblue;
+    }
+
+    #account {
+        height: 1104px;
+        width: 100%;
+        margin-top: 65px;
+    }
+
+    #account__content {
+        height: 46.7391%;
+        width: 86.2319%;
+        gap: 30px;   
+    }
+
+    #account__content h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.10000000149011612px;
+        text-align: center;
+    }
+    
+    #account__content h2 {
+        height: 48.062%;
+        width: 100%;
+        padding: 10px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 57px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+    }
+
+    #account__content h4 {
+        width: 77.59%;
+        height: 33.333%;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 38px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: center;
+    }
+
+    #account__img {
+        margin-top: 7px;
+        width: 157.00483%;
+        min-height: 581px;
+        background-image: url(../images/account.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: drop-shadow(25px 15px 50px #2E040426);
+    }
+}
