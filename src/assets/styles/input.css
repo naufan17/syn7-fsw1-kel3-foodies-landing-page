@@ -7,13 +7,6 @@
 }
 
 @layer components {
-    .box {
-        min-height: 1rem;
-        border: 1px solid red;
-        font-size: 1rem;
-        background-color: lightblue;
-    }
-
     #account {
         height: 1104px;
         width: 100%;
