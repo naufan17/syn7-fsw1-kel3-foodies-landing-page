@@ -544,7 +544,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-<<<<<<< HEAD
 #account {
   height: 1104px;
   width: 100%;
@@ -604,7 +603,8 @@ video {
 
 .z-10 {
   z-index: 10;
-=======
+}
+
 .container {
   width: 100%;
 }
@@ -637,7 +637,6 @@ video {
   .container {
     max-width: 1536px;
   }
->>>>>>> feat/hero
 }
 
 .mx-auto {
@@ -645,7 +644,6 @@ video {
   margin-right: auto;
 }
 
-<<<<<<< HEAD
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -671,9 +669,22 @@ video {
   margin-top: 30px;
 }
 
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
+.my-\[30px\] {
+  margin: 30px 0;
+}
+
+.mx-\[40px\] {
+  margin: 0 40px;
+}
+
 .box-border {
   box-sizing: border-box;
-=======
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -684,7 +695,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
->>>>>>> feat/hero
 }
 
 .flex {
@@ -695,13 +705,12 @@ video {
   height: 2.5rem;
 }
 
-<<<<<<< HEAD
 .grid {
   display: grid;
-=======
+}
+
 .h-14 {
   height: 3.5rem;
->>>>>>> feat/hero
 }
 
 .h-\[20px\] {
@@ -724,13 +733,12 @@ video {
   width: 2.5rem;
 }
 
-<<<<<<< HEAD
 .w-36 {
   width: 9rem;
-=======
+}
+
 .w-48 {
   width: 12rem;
->>>>>>> feat/hero
 }
 
 .w-\[104px\] {
@@ -745,7 +753,6 @@ video {
   width: 45%;
 }
 
-<<<<<<< HEAD
 .w-\[55\%\] {
   width: 55%;
 }
@@ -754,8 +761,6 @@ video {
   width: 100%;
 }
 
-=======
->>>>>>> feat/hero
 .max-w-lg {
   max-width: 32rem;
 }
@@ -792,7 +797,6 @@ video {
   gap: 1.5rem;
 }
 
-<<<<<<< HEAD
 .self-center {
   align-self: center;
 }
@@ -807,7 +811,8 @@ video {
 
 .self-center {
   align-self: center;
-=======
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -816,7 +821,6 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
->>>>>>> feat/hero
 }
 
 .rounded-xl {
@@ -894,7 +898,6 @@ video {
   padding-right: 1.25rem;
 }
 
-<<<<<<< HEAD
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -905,21 +908,16 @@ video {
   padding-bottom: 2.5rem;
 }
 
-=======
->>>>>>> feat/hero
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
-<<<<<<< HEAD
-=======
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
->>>>>>> feat/hero
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -944,13 +942,10 @@ video {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .font-montserrat {
   font-family: Montserrat, sans-serif;
 }
 
-=======
->>>>>>> feat/hero
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -961,7 +956,6 @@ video {
   line-height: 2.25rem;
 }
 
-<<<<<<< HEAD
 .text-\[40px\] {
   font-size: 40px;
 }
@@ -974,11 +968,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-=======
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
->>>>>>> feat/hero
 }
 
 .text-xl {
@@ -986,19 +980,15 @@ video {
   line-height: 1.75rem;
 }
 
-<<<<<<< HEAD
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
-=======
->>>>>>> feat/hero
 .font-bold {
   font-weight: 700;
 }
 
-<<<<<<< HEAD
 .font-medium {
   font-weight: 500;
 }
@@ -1030,7 +1020,8 @@ video {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(250 74 12 / var(--tw-text-opacity));
-=======
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1039,7 +1030,6 @@ video {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
->>>>>>> feat/hero
 }
 
 .text-primary {
