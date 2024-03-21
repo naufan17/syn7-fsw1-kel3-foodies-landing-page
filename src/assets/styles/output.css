@@ -635,6 +635,14 @@ video {
   margin-top: 30px;
 }
 
+.my-\[30px\] {
+  margin: 30px 0;
+}
+
+.mx-\[40px\] {
+  margin: 0 40px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
