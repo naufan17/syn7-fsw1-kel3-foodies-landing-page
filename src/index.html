@@ -21,13 +21,21 @@
     <div class="min-h-[100vh] bg-white mx-auto">
       <!-- navbar -->
       <nav class="bg-white">
-        <div class="container mx-auto flex items-center justify-between p-6 lg:p-3">
+        <div
+          class="container flex items-center justify-between p-6 mx-auto lg:p-3"
+        >
           <div class="w-[150px] lg:w-[200px]">
-            <img src="./assets/images/logo.png" class="object-cover w-full h-full" />
+            <img
+              src="./assets/images/logo.png"
+              class="object-cover w-full h-full"
+            />
           </div>
           <div class="block navbar-toggler md:hidden">
             <button type="button">
-              <img src="./assets/images/menu.svg" class="w-[20px] h-[20px] object-cover" />
+              <img
+                src="./assets/images/menu.svg"
+                class="w-[20px] h-[20px] object-cover"
+              />
             </button>
           </div>
           <div class="hidden md:block">
@@ -38,19 +46,32 @@
               <li class="nav-item"><a>Contact</a></li>
             </ul>
           </div>
-          <aside id="offcanvas" class="fixed inset-y-0 right-0 bg-[#FFF] w-80 p-4 z-10 hidden lg:hidden">
+          <aside
+            id="offcanvas"
+            class="fixed inset-y-0 right-0 bg-[#FFF] w-80 p-4 z-10 hidden lg:hidden"
+          >
             <nav>
-              <div class="flex justify-between items-center mb-4 p-4 border-b-2 border-[#d0d0d0]">
+              <div
+                class="flex justify-between items-center mb-4 p-4 border-b-2 border-[#d0d0d0]"
+              >
                 <div class="w-[100px]">
-                  <img src="./assets/images/logo.png" class="object-cover w-full h-full" />
+                  <img
+                    src="./assets/images/logo.png"
+                    class="object-cover w-full h-full"
+                  />
                 </div>
                 <div class="leading-none navbar-toggler">
                   <button type="button">
-                    <img src="./assets/images/ic_close.svg" class="w-[24px] h-[24px] object-cover" />
+                    <img
+                      src="./assets/images/ic_close.svg"
+                      class="w-[24px] h-[24px] object-cover"
+                    />
                   </button>
                 </div>
               </div>
-              <ul class="flex flex-col justify-center items-start gap-4 text-[14px] mt-8">
+              <ul
+                class="flex flex-col justify-center items-start gap-4 text-[14px] mt-8"
+              >
                 <li class="nav-item active"><a href="#home">Home</a></li>
                 <li class="nav-item"><a href="#product">Product</a></li>
                 <li class="nav-item"><a href="#faq">FAQ</a></li>
@@ -58,37 +79,45 @@
               </ul>
             </nav>
           </aside>
-          <div id="overlay" class="fixed inset-0 bg-black opacity-50 hidden lg:hidden"></div>
+          <div
+            id="overlay"
+            class="fixed inset-0 hidden bg-black opacity-50 lg:hidden"
+          ></div>
         </div>
       </nav>
       <!-- /navbar -->
 
       <!-- hero -->
-      <section id="hero" class="bg-gray-50 min-h-[20rem] flex justify-center items-center">
-        <div class="container mx-auto px-4 py-8">
+      <section
+        id="hero"
+        class="bg-gray-50 min-h-[20rem] flex justify-center items-center"
+      >
+        <div class="container px-4 py-8 mx-auto">
           <div class="max-w-md mx-auto text-center">
-            <h2 class="font-bold mt-3 mb-3 text-gray-500">Food App</h2>
-            <h1 class="text-5xl font-bold mb-8 text-gray-800">
+            <h2 class="mt-3 mb-3 font-bold text-gray-500">Food App</h2>
+            <h1 class="mb-8 text-5xl font-bold text-gray-800">
               Why stay hungry <br />
               when you can order <br />
               from Bella Onoje
             </h1>
-            <p class="text-2xl mb-8 text-gray-500">
+            <p class="mb-8 text-2xl text-gray-500">
               Download the bella onoje's <br />
               food app now on
             </p>
-            <div class="flex flex-col items-center space-y-4 mb-8">
-              <button class="bg-primary text-xl text-white font-bold py-2 px-4 rounded-full h-14 w-48">
+            <div class="flex flex-col items-center mb-8 space-y-4">
+              <button
+                class="w-48 px-4 py-2 text-xl font-bold text-white rounded-full bg-primary h-14"
+              >
                 Playstore
               </button>
               <button
-                class="bg-transparent text-xl text-primary font-bold py-2 px-4 border border-primary rounded-full h-14 w-48"
+                class="w-48 px-4 py-2 text-xl font-bold bg-transparent border rounded-full text-primary border-primary h-14"
               >
                 App store
               </button>
             </div>
           </div>
-          <div class="image flex justify-center items-center">
+          <div class="flex items-center justify-center image">
             <img src="assets/images/phones.png" alt="" />
           </div>
         </div>
@@ -101,50 +130,88 @@
       >
         <div id="account__content" class="flex flex-col justify-between">
           <h3 class="text-primary">Create an account</h3>
-          <h2 class="flex justify-center items-center">Create/login to an existing account to get started</h2>
-          <h4 class="text-secondary flex justify-center items-center self-center box-border">
+          <h2 class="flex items-center justify-center">
+            Create/login to an existing account to get started
+          </h2>
+          <h4
+            class="box-border flex items-center self-center justify-center text-secondary"
+          >
             An account is created with your email and a desired password
           </h4>
         </div>
-        <div id="account__img" class="flex justify-center items-center z-0">
-          <div class="account__img--shadow z-10"></div>
+        <div id="account__img" class="z-0 flex items-center justify-center">
+          <div class="z-10 account__img--shadow"></div>
         </div>
       </section>
 
       <section id="explore">
         <!-- <h1>Explore</h1> -->
         <div class="relative mx-10 my-10 lg:mx-auto md:max-w-5xl">
-          <div class="grid gap-[30px] grid-col md:grid-cols-2 md:item-center md:justify-center">
+          <div
+            class="grid gap-[30px] grid-col md:grid-cols-2 md:item-center md:justify-center"
+          >
             <div class="flex flex-col self-center">
-              <h3 class="my-8 md:my-4 font-bold text-2xl text-primary text-center md:text-left"> Explore Varities </h3>
-              <h2 class="my-8 md:my-4 font-bold text-[40px] text-dark text-center md:text-left">
+              <h3
+                class="my-8 text-2xl font-bold text-center md:my-4 text-primary md:text-left"
+              >
+                Explore Varities
+              </h3>
+              <h2
+                class="my-8 md:my-4 font-bold text-[40px] text-dark text-center md:text-left"
+              >
                 Shop for your favorites meal as e dey hot
               </h2>
-              <h4 class="my-8 md:my-4 text-2xl text-center md:text-left text-[#737373]">
+              <h4
+                class="my-8 md:my-4 text-2xl text-center md:text-left text-[#737373]"
+              >
                 Shop for your favorite meals or drinks and enjoy while doing it.
               </h4>
             </div>
-            <div class="flex item-center justify-center">
-              <img class="object-cover w-80 h-full" src="assets/images/explore.png" alt="Explore" />
+            <div class="flex justify-center item-center">
+              <img
+                class="object-cover h-full w-80"
+                src="assets/images/explore.png"
+                alt="Explore"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="checkout" class="bg-gray-50 min-h-[20rem] flex justify-center items-center mb-[-200px]">
-        <div class="w-full font-montserrat">
-          <div class="flex flex-col items-center justify-center gap-[30px]">
-            <p class="text-2xl font-bold text-primary mt-[30px]">Checkout</p>
-            <p class="font-bold text-[40px] text-dark text-center w-[55%] tracking-[0.2px]">
-              When you done check out and get it delivered.
-            </p>
-            <p class="text-[#737373] text-2xl font-medium text-center w-[45%] tracking-[0.2px]">
-              When you done check out and get it delivered with ease.
-            </p>
+      <!-- Checkout -->
+      <section id="checkout">
+        <div class="relative mx-10 my-10 lg:mx-auto md:max-w-5xl">
+          <div
+            class="flex gap-[30px] flex-col md:flex-row-reverse md:items-center md:justify-center"
+          >
+            <div class="flex flex-col self-center">
+              <h3
+                class="my-8 text-2xl font-bold text-center md:my-4 text-primary md:text-left"
+              >
+                Checkout
+              </h3>
+              <h2
+                class="my-8 md:my-4 font-bold text-[40px] text-dark text-center md:text-left w-[100%]"
+              >
+                When you done check out and get it delivered.
+              </h2>
+              <h4
+                class="my-8 md:my-4 text-2xl text-center md:text-left text-[#737373]"
+              >
+                When you done check out and get it delivered with ease.
+              </h4>
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                class="w-[800px]"
+                src="assets/images/checkout.png"
+                alt="Explore"
+              />
+            </div>
           </div>
-          <img src="./assets/images/checkout.png" alt="Checkout" class="mt-[-140px]" />
         </div>
       </section>
+      <!-- /Checkout -->
 
       <!-- footer -->
       <footer id="footer">
@@ -152,21 +219,38 @@
           class="flex flex-col gap-6 px-5 text-center text-white bg-dark py-28 lg:bg-[url('/src/assets/images/bg-footer.png')] lg:bg-cover lg:bg-center"
         >
           <h1 class="text-3xl e">Download the app now.</h1>
-          <p>Available on your favorite store. Start your premium experience now</p>
+          <p>
+            Available on your favorite store. Start your premium experience now
+          </p>
           <div class="flex items-center justify-center gap-3">
-            <button type="button" class="px-8 py-4 bg-primary rounded-xl">Buy Now</button>
-            <button type="button" class="px-8 py-4 bg-transparent border border-white rounded-xl">Try for free</button>
+            <button type="button" class="px-8 py-4 bg-primary rounded-xl">
+              Buy Now
+            </button>
+            <button
+              type="button"
+              class="px-8 py-4 bg-transparent border border-white rounded-xl"
+            >
+              Try for free
+            </button>
           </div>
         </div>
         <div class="container w-full mx-auto">
-          <div class="flex flex-col py-10 justify-between items-center md:flex-row">
-            <img src="/src/assets/images/logo.png" alt="logo" class="hidden md:block" />
-            <div class="flex justify-center items-center gap-3 py-6">
+          <div
+            class="flex flex-col items-center justify-between py-10 md:flex-row"
+          >
+            <img
+              src="/src/assets/images/logo.png"
+              alt="logo"
+              class="hidden md:block"
+            />
+            <div class="flex items-center justify-center gap-3 py-6">
               <img src="/src/assets/images/ic_twitter.svg" alt="icon" />
               <img src="/src/assets/images/ic_facebook.svg" alt="icon" />
               <img src="/src/assets/images/ic_linkedin.svg" alt="icon" />
             </div>
-            <p class="text-center text-xs font-bold text-[#5C5C5C]">Just type what's on your mind and we'll</p>
+            <p class="text-center text-xs font-bold text-[#5C5C5C]">
+              Just type what's on your mind and we'll
+            </p>
           </div>
         </div>
       </footer>
