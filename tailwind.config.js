@@ -9,9 +9,6 @@ module.exports = {
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
-        primary: '#FA4A0C',
-        dark: '#252B42',
-        secondary: '#737373',
       },
     },
   },
