@@ -124,23 +124,20 @@
       </section>
       <!-- /hero -->
 
-      <section
-        id="account"
-        class="bg-white min-h-[20rem] flex flex-col justify-center items-center box-border overflow-x-clip"
-      >
-        <div id="account__content" class="flex flex-col justify-between">
-          <h3 class="text-primary">Create an account</h3>
-          <h2 class="flex items-center justify-center">
-            Create/login to an existing account to get started
-          </h2>
-          <h4
-            class="box-border flex items-center self-center justify-center text-secondary"
-          >
-            An account is created with your email and a desired password
-          </h4>
+      <!-- account -->
+      <section id="account" class="flex flex-col w-screen items-center justify-center overflow-x-hidden">
+        <div class="flex flex-col w-full text-center items-center mb-16 md:flex-col-reverse md:mb-137px">
+          <h3 class="font-semibold w-7/12 mb-12 md:w-1/3 md:m-0">How the app works</h3>
+          <div id="account__strip" class="w-full border-2 border-borderGrey md:w-3/5 md:mb-18"></div>
         </div>
-        <div id="account__img" class="z-0 flex items-center justify-center">
-          <div class="z-10 account__img--shadow"></div>
+
+        <div class="flex flex-col w-full items-center md:flex-row-reverse md:w-71/90">
+          <div id="account__content" class="flex flex-col gap-30px w-119/138 items-center md:gap-7px md:w-1/2 md:items-start md:ms-17/144vw">
+            <h3 class="flex text-primary text-center justify-center w-4/6 md:text-left md:justify-start">Create an account</h3>
+            <h2 class="flex text-dark text-center justify-center p-2.5 md:text-left md:p-0 md:py-2.5 md:justify-start">Create/login to an existing account to get started</h2>
+            <h4 class="flex text-secondary text-center justify-center w-227/357 p-2.5 md:text-left md:p-0 md:py-2.5 md:justify-start">An account is created with your email and a desired password</h4>
+          </div>
+          <div id="account__img"></div>
         </div>
       </section>
 

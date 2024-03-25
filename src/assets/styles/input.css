@@ -22,56 +22,43 @@
         background-color: lightblue;
     }
 
-    #account {
-        height: 1104px;
-        width: 100%;
-        margin-top: 65px;
-    }
-
-    #account__content {
-        height: 46.7391%;
-        width: 86.2319%;
-        gap: 30px;   
-    }
-
-    #account__content h3 {
+    #account h3 {
         font-size: 24px;
         font-weight: 700;
         line-height: 36px;
-        letter-spacing: 0.10000000149011612px;
-        text-align: center;
+        letter-spacing: 0.1px;
     }
     
-    #account__content h2 {
-        height: 48.062%;
-        width: 100%;
-        padding: 10px;
+    #account h2 {
         font-size: 40px;
         font-weight: 700;
         line-height: 57px;
-        letter-spacing: 0.20000000298023224px;
-        text-align: center;
+        letter-spacing: 0.2px;
     }
 
-    #account__content h4 {
-        width: 77.59%;
-        height: 33.333%;
-        padding: 10px;
+    #account h4 {
         font-size: 24px;
         font-weight: 500;
         line-height: 38px;
-        letter-spacing: 0.20000000298023224px;
-        text-align: center;
+        letter-spacing: 0.2px;
     }
 
     #account__img {
-        margin-top: 7px;
-        width: 157.00483%;
-        min-height: 581px;
         background-image: url(../images/account.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
-        filter: drop-shadow(25px 15px 50px #2E040426);
+        background-size: cover;
+        height: 581px;
+        width: 650px;
+        filter: drop-shadow(15px 10px 20px #2E040426);
+    }
+
+    @media (min-width: 768px) {
+        #account__img {
+            background-image: url(../images/account-lg.png);
+            width: 20.97222vw;
+            height: 36.45833vw;
+            margin-right: 11.80555%;
+        }
     }
 }
