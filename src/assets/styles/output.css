@@ -643,9 +643,9 @@ video {
   z-index: 10;
 }
 
-.mx-\[40px\] {
-  margin-left: 40px;
-  margin-right: 40px;
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mx-auto {
@@ -653,9 +653,14 @@ video {
   margin-right: auto;
 }
 
-.my-\[30px\] {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-3 {
@@ -748,6 +753,14 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .flex-col {
@@ -995,25 +1008,38 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
-  .md\:flex-row {
-    flex-direction: row;
+  .md\:max-w-5xl {
+    max-width: 64rem;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:bg-\[url\(\'\/src\/assets\/images\/bg-footer\.png\'\)\] {
-    background-image: url('/src/assets/images/bg-footer.png');
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
+}
 
-  .lg\:bg-cover {
-    background-size: cover;
-  }
-
-  .lg\:bg-center {
-    background-position: center;
+@media (min-width: 1280px) {
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
