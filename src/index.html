@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/styles/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+      background: #ffffff;
+    }
+  </style>
+
   <body class="bg-gray-50">
-    <div class="min-h-[100vh] w-screen bg-white mx-auto">
+    <div class="min-h-[100vh] bg-white mx-auto">
       <!-- navbar -->
       <nav class="bg-white">
-        <div class="flex justify-between items-center p-6">
-          <div class="w-[104px]">
+        <div
+          class="container flex items-center justify-between p-6 mx-auto lg:p-3"
+        >
+          <div class="w-[150px] lg:w-[200px]">
             <img
               src="./assets/images/logo.png"
-              class="w-full h-full object-cover"
+              class="object-cover w-full h-full"
             />
           </div>
-          <div>
+          <div class="block navbar-toggler md:hidden">
             <button type="button">
               <img
                 src="./assets/images/menu.svg"
@@ -25,6 +38,51 @@
               />
             </button>
           </div>
+          <div class="hidden md:block">
+            <ul class="flex gap-10 lg:gap-24">
+              <li class="nav-item active"><a>Home</a></li>
+              <li class="nav-item"><a>Product</a></li>
+              <li class="nav-item"><a>FAQ</a></li>
+              <li class="nav-item"><a>Contact</a></li>
+            </ul>
+          </div>
+          <aside
+            id="offcanvas"
+            class="fixed inset-y-0 right-0 bg-[#FFF] w-80 p-4 z-10 hidden lg:hidden"
+          >
+            <nav>
+              <div
+                class="flex justify-between items-center mb-4 p-4 border-b-2 border-[#d0d0d0]"
+              >
+                <div class="w-[100px]">
+                  <img
+                    src="./assets/images/logo.png"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+                <div class="leading-none navbar-toggler">
+                  <button type="button">
+                    <img
+                      src="./assets/images/ic_close.svg"
+                      class="w-[24px] h-[24px] object-cover"
+                    />
+                  </button>
+                </div>
+              </div>
+              <ul
+                class="flex flex-col justify-center items-start gap-4 text-[14px] mt-8"
+              >
+                <li class="nav-item active"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#product">Product</a></li>
+                <li class="nav-item"><a href="#faq">FAQ</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </aside>
+          <div
+            id="overlay"
+            class="fixed inset-0 hidden bg-black opacity-50 lg:hidden"
+          ></div>
         </div>
       </nav>
       <!-- /navbar -->
@@ -32,9 +90,37 @@
       <!-- hero -->
       <section
         id="hero"
-        class="bg-gray-100 min-h-[20rem] flex justify-center items-center"
+        class="bg-gray-50 min-h-[20rem] flex justify-center items-center"
       >
-        <h1>Hero</h1>
+        <div class="container px-4 py-8 mx-auto">
+          <div class="max-w-md mx-auto text-center">
+            <h2 class="mt-3 mb-3 font-bold text-gray-500">Food App</h2>
+            <h1 class="mb-8 text-5xl font-bold text-gray-800">
+              Why stay hungry <br />
+              when you can order <br />
+              from Bella Onoje
+            </h1>
+            <p class="mb-8 text-2xl text-gray-500">
+              Download the bella onoje's <br />
+              food app now on
+            </p>
+            <div class="flex flex-col items-center mb-8 space-y-4">
+              <button
+                class="w-48 px-4 py-2 text-xl font-bold text-white rounded-full bg-primary h-14"
+              >
+                Playstore
+              </button>
+              <button
+                class="w-48 px-4 py-2 text-xl font-bold bg-transparent border rounded-full text-primary border-primary h-14"
+              >
+                App store
+              </button>
+            </div>
+          </div>
+          <div class="flex items-center justify-center image">
+            <img src="assets/images/phones.png" alt="" />
+          </div>
+        </div>
       </section>
       <!-- /hero -->
 
@@ -54,51 +140,129 @@
           <div id="account__img"></div>
         </div>
       </section>
-      <!-- /account -->
 
-      <section
-        id="explore"
-        class="bg-gray-100 min-h-[20rem] flex justify-center items-center"
-      >
-        <h1>Explore</h1>
+      <section id="explore">
+        <!-- <h1>Explore</h1> -->
+        <div class="relative mx-10 my-10 lg:mx-auto md:max-w-5xl">
+          <div
+            class="grid gap-[30px] grid-col md:grid-cols-2 md:item-center md:justify-center"
+          >
+            <div class="flex flex-col self-center">
+              <h3
+                class="my-8 text-2xl font-bold text-center md:my-4 text-primary md:text-left"
+              >
+                Explore Varities
+              </h3>
+              <h2
+                class="my-8 md:my-4 font-bold text-[40px] text-dark text-center md:text-left"
+              >
+                Shop for your favorites meal as e dey hot
+              </h2>
+              <h4
+                class="my-8 md:my-4 text-2xl text-center md:text-left text-[#737373]"
+              >
+                Shop for your favorite meals or drinks and enjoy while doing it.
+              </h4>
+            </div>
+            <div class="flex justify-center item-center">
+              <img
+                class="object-cover h-full w-80"
+                src="assets/images/explore.png"
+                alt="Explore"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section
-        id="checkout"
-        class="bg-gray-50 min-h-[20rem] flex justify-center items-center"
-      >
-        <h1>Checkout</h1>
+      <!-- Checkout -->
+      <section id="checkout">
+        <div class="relative mx-10 my-10 lg:mx-auto md:max-w-5xl">
+          <div
+            class="flex gap-[30px] flex-col md:flex-row-reverse md:items-center md:justify-center"
+          >
+            <div class="flex flex-col self-center">
+              <h3
+                class="my-8 text-2xl font-bold text-center md:my-4 text-primary md:text-left"
+              >
+                Checkout
+              </h3>
+              <h2
+                class="my-8 md:my-4 font-bold text-[40px] text-dark text-center md:text-left w-[100%]"
+              >
+                When you done check out and get it delivered.
+              </h2>
+              <h4
+                class="my-8 md:my-4 text-2xl text-center md:text-left text-[#737373]"
+              >
+                When you done check out and get it delivered with ease.
+              </h4>
+            </div>
+            <div class="flex items-center justify-center">
+              <img
+                class="w-[800px]"
+                src="assets/images/checkout.png"
+                alt="Explore"
+              />
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- /Checkout -->
 
       <!-- footer -->
-      <footer class="">
+      <footer id="footer">
         <div
-          class="bg-dark text-center flex flex-col gap-6 px-5 py-28 text-white"
+          class="flex flex-col gap-6 px-5 text-center text-white bg-dark py-28 lg:bg-[url('/src/assets/images/bg-footer.png')] lg:bg-cover lg:bg-center"
         >
           <h1 class="text-3xl e">Download the app now.</h1>
           <p>
             Available on your favorite store. Start your premium experience now
           </p>
-          <div class="flex justify-center items-center gap-3">
-            <button type="button" class="bg-primary px-8 py-4 rounded-xl">
+          <div class="flex items-center justify-center gap-3">
+            <button type="button" class="px-8 py-4 bg-primary rounded-xl">
               Buy Now
             </button>
             <button
               type="button"
-              class="bg-transparent px-8 py-4 border border-white rounded-xl"
+              class="px-8 py-4 bg-transparent border border-white rounded-xl"
             >
               Try for free
             </button>
           </div>
         </div>
-        <div class="flex justify-center items-center gap-3 py-6">
-          <div class="h-10 w-10 bg-primary"></div>
-          <div class="h-10 w-10 bg-primary"></div>
-          <div class="h-10 w-10 bg-primary"></div>
+        <div class="container w-full mx-auto">
+          <div
+            class="flex flex-col items-center justify-between py-10 md:flex-row"
+          >
+            <img
+              src="/src/assets/images/logo.png"
+              alt="logo"
+              class="hidden md:block"
+            />
+            <div class="flex items-center justify-center gap-3 py-6">
+              <img src="/src/assets/images/ic_twitter.svg" alt="icon" />
+              <img src="/src/assets/images/ic_facebook.svg" alt="icon" />
+              <img src="/src/assets/images/ic_linkedin.svg" alt="icon" />
+            </div>
+            <p class="text-center text-xs font-bold text-[#5C5C5C]">
+              Just type what's on your mind and we'll
+            </p>
+          </div>
         </div>
       </footer>
       <!-- /footer -->
     </div>
+    <script>
+      let navbarToggler = document.getElementsByClassName("navbar-toggler");
+
+      for (let i = 0; i < navbarToggler.length; i++) {
+        navbarToggler[i].addEventListener("click", function () {
+          document.getElementById("offcanvas").classList.toggle("hidden");
+          document.getElementById("overlay").classList.toggle("hidden");
+        });
+      }
+    </script>
     <script src="./app.js"></script>
   </body>
 </html>

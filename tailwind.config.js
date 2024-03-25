@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       borderWidth: {
@@ -24,6 +24,9 @@ module.exports = {
         '119/138':'86.231884%',
         '71/90':'78.8888%',
         '227/357':'77.591%',
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
