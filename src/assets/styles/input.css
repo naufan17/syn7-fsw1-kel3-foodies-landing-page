@@ -7,6 +7,14 @@
 }
 
 @layer components {
+    .nav-item {
+        @apply text-[14px] font-semibold leading-[28px] cursor-pointer hover:text-primary lg:text-[16px];
+    }
+
+    .active {
+        @apply text-primary;
+    }
+
     .box {
         min-height: 1rem;
         border: 1px solid red;
