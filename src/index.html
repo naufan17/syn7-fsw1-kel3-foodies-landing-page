@@ -16,7 +16,7 @@
   </style>
 
 <body class="bg-gray-50">
-  <div class="min-h-[100vh] bg-white mx-auto max-w-lg">
+  <div class="min-h-[100vh] bg-white mx-auto">
     <!-- navbar -->
     <nav class="bg-white">
       <div class="flex items-center justify-between p-6">
@@ -128,7 +128,7 @@
       <!-- footer -->
       <footer id="footer">
         <div
-          class="flex flex-col gap-6 px-5 text-center text-white bg-dark py-28"
+          class="flex flex-col gap-6 px-5 text-center text-white bg-dark py-28 lg:bg-[url('/src/assets/images/bg-footer.png')] lg:bg-cover lg:bg-center"
         >
           <h1 class="text-3xl e">Download the app now.</h1>
           <p>
@@ -146,13 +146,16 @@
             </button>
           </div>
         </div>
-        <div class="py-10">
-          <div class="flex justify-center items-center gap-3 py-6">
-            <img src="/src/assets/images/ic_twitter.svg" alt="icon">
-            <img src="/src/assets/images/ic_facebook.svg" alt="icon">
-            <img src="/src/assets/images/ic_linkedin.svg" alt="icon">
+        <div class="container w-full mx-auto">
+          <div class="flex flex-col py-10 justify-between items-center md:flex-row">
+            <img src="/src/assets/images/logo.png" alt="logo" class="hidden md:block">
+            <div class="flex justify-center items-center gap-3 py-6">
+              <img src="/src/assets/images/ic_twitter.svg" alt="icon">
+              <img src="/src/assets/images/ic_facebook.svg" alt="icon">
+              <img src="/src/assets/images/ic_linkedin.svg" alt="icon">
+            </div>
+            <p class="text-center text-xs font-bold text-[#5C5C5C]">Just type what's on your mind and we'll </p>
           </div>
-          <p class="text-center text-xs font-bold text-[#5C5C5C]">Just type what's on your mind and we'll </p>
         </div>
       </footer>
       <!-- /footer -->
